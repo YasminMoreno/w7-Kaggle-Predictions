@@ -4,26 +4,53 @@ Proyecto de Machine learning
 
 ## Introducción
 
-Para este proyecto vamos a analizar un dataset que se nos entrega sobre los ataques de tiburón en todo el mundo. Para ello necesitaremos hacer una limpieza y una transformación de todos los datos para poder realizar un análisis y extraer los insights más relevantes. 
+Para el proyecto de la semana 7 deberemos juntar 2 csv para transformarlos con todo lo aprendido y así hacer un modelo de machine learning para predecir los sueldos del dataset. 
 
-Este dataset que nos dan consta de aproximadamente unas 25.000 filas y 24 columnas de las cuales no se pueden borrar las columnas y podemos quedarnos con aproximadamente unas 1.500 filas como mínimo. 
-
-Posteriormente tendremos que crear unos gráficos para sacar unas conclusiones finales. 
 
 ## Objetivos
 
-1. Hacer limpieza con pandas sobre el dataset y llegar a quedarnos con aproximadamente unas 1.500 filas como mínimo sin borrar ninguna columna.
-2. Pensar las columnas las cuales van a ser relvantes para nuestro proyecto final y proceder a limpiarlas.
-3. Quitar duplicados, nulos y elementos irrelevantes.
-4. Corregir y normalizar las columnas escogidas (edad, años, especies, sexo, país y la mortalidad de los ataques).
-5. Hacer gráficos y llegar a unas conclusiones.
+1. Subir y juntar los dos csv dados.
+2. Transformarlos con python los csv ya unidos.
+3. No borrar filas en el csv test.
+4. Hacer las mismas transformaciones en ambos csv.
+5. Hacer gráficos para ver que estámos haciendo.
+6. Entrenar y predecir para crear un nuebvo csv con la ID y el salario.
+
+## Algunos pasos que he seguido
+
+1. Abris los 2 csv en python y observar los datos dados, posteriormente unir mediante concat los 2 csv.
+2. Coger las columnas para ir transformandolas.
+3. En este caso he analizado la columna de job_title junto a la de salary_in_usd.
+
+![portada](https://github.com/YasminMoreno/w7-Kaggle-Predictions/blob/main/img/graph1.png)
+
+4. Posteriormente he observado los outliers que había para quitarlos.
+
+![portada](https://github.com/YasminMoreno/w7-Kaggle-Predictions/blob/main/img/graph2.png)
+
+5. He agrupado los job_title en 6 grupos.
+
+![portada](https://github.com/YasminMoreno/w7-Kaggle-Predictions/blob/main/img/graph3.png)
+
+6. También he hecho gráficas como ésta con la mediamedia de salarios por company_location para posteriormente dar un valor a cada localidad y así poder llegar a mejores resultados. 
+
+![portada](https://github.com/YasminMoreno/w7-Kaggle-Predictions/blob/main/img/graph4.png)
+
+7. He hecho  un dummies a la columna company_size y un label encode a la columna experience_level.
+
+8. He hecho algun replace para cambiar nombres a algunos registros y alguna transformación más.
+
+9. Prueba de modelos.
+
+10. Entrenar y predecir. 
 
 
 ## Entregables
 
-1. Archivo `clean.ipynb` con el código donde limpiamos y transformamos los datos y donde realizamos los gráficos. 
-2. Archivo `sharks_clean.csv` con el dataset limpio.
-3. Archivo pdf `Presentación insights Sharks` con la explicación de 6 insights desarrollados.
+1. Carpeta `data` con los CSV que tenemosque limpiar. 
+2. Carpeta `img` con algunas gráficas y la imagen del resultado final.
+3. Archivo csv final `proyecto_sem7_5.`.
+
 
 ## Resultado final:
 
